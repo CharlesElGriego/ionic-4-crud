@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="primary" (click)="addClient()">
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Clients</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-list>
+    <app-client [client]="client" *ngFor="let client of clients, let i = index" 
+      (editClient)="edit($event)">
+    </app-client>
+
+    <ion-item *ngIf="clients &&  clients.length ===0" class="ion-no-padding">
+      <ion-label>
+        No Clients
+      </ion-label>
+    </ion-item>
+
+
+  </ion-list>
+
+
+</ion-content>

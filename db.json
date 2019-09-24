@@ -1,0 +1,19 @@
+{
+  "clients": [
+    {
+      "id": "kekoi",
+      "name": "Bruce ",
+      "lastName": "Wayne"
+    },
+    {
+      "name": "Peter ",
+      "lastName": "Parker",
+      "id": "nbgyfn"
+    },
+    {
+      "name": "Charles",
+      "lastName": "El Griego",
+      "id": "mdmbmdc"
+    }
+  ]
+}
